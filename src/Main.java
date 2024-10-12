@@ -7,40 +7,34 @@ public class Main {
         String playerB = "";
         String cont = "Y";
 
-        do
-        {
-            System.out.print( "Player A, what is your move [please use R,P,or S]");
+        do {
+            System.out.print("Player A, what is your move [please use R,P,or S]");
             playerA = in.next();
-            System.out.print( "Player B, what is your move [please use R,P,or S]");
+            System.out.print("Player B, what is your move [please use R,P,or S]");
             playerB = in.next();
 
             if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("r")) {
                 System.out.println("Rock vs Rock is a tie");
-            }
-			else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("r")) {
+            } else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("r")) {
                 System.out.println("Paper beats Rock, Player A wins");
-            }
-            else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("r")) {
+            } else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("r")) {
                 System.out.println("Rock breaks Scissors, Player B wins");
-            }
-            else if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("p")) {
+            } else if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("p")) {
                 System.out.println("Paper beats Rock, Player B wins");
-            }
-            else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("p")) {
+            } else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("p")) {
                 System.out.println("Paper vs Paper is a tie");
-            }
-			else if playerA == "S" AND playerB == "P" then
-        OUTPUT "Scissors cut Paper, player A wins"
-			else if playerA == "R" AND playerB == "S" then
-        OUTPUT "Rock breaks Scissors, Player A wins"
-			else if playerA == "P" AND playerB == "S" then
-        OUTPUT "Scissors cut Paper, Player B wins"
-			else if playerA == "S" AND playerB == "S" then
-        OUTPUT "Scissors vs Scissors is a tie"
-			else
-        OUTPUT "Someone gave an ivalid answer please use 'R', 'P', or 'S'"
-        OUTPUT "Would you like to play again? [chose Y for yes and N for no]"
-        INPUT continue
-        while (continue.equals "Y")
+            } else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("p")) {
+                System.out.println("Scissors cut Paper, player A wins");
+            } else if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("s")) {
+                System.out.println("Rock breaks Scissors, Player A wins");
+            } else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("s")) {
+                System.out.println("Scissors cut Paper, Player B wins");
+            } else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("s")) {
+                System.out.println("Scissors vs Scissors is a tie");
+            } else
+                System.out.println("Someone gave an ivalid answer please use 'R', 'P', or 'S'");
+            OUTPUT "Would you like to play again? [chose Y for yes and N for no]"
+            INPUT continue
+        } while (cont.equalsIgnoreCase("y"));
     }
 }
