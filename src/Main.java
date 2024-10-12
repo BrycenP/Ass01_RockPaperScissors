@@ -14,10 +14,12 @@ public class Main {
             System.out.print( "Player B, what is your move [please use R,P,or S]");
             playerB = in.next();
 
-        if playerA == "R" AND playerB == "R" then
-        OUTPUT "Rock vs Rock is a tie"
-			else if playerA == "P" AND playerB == "R" then
-        OUTPUT "Paper beats Rock, Player A wins"
+            if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("r")) {
+                System.out.println("Rock vs Rock is a tie");
+            }
+			else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("r")) {
+                System.out.println("Paper beats Rock, Player A wins");
+            }
 			else if playerA == "S" AND playerB == "R" then
         OUTPUT "Rock breaks Scissors, Player B wins"
 			else if playerA == "R" AND playerA == "P" then
