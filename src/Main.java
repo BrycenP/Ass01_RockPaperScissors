@@ -20,12 +20,15 @@ public class Main {
 			else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("r")) {
                 System.out.println("Paper beats Rock, Player A wins");
             }
-			else if playerA == "S" AND playerB == "R" then
-        OUTPUT "Rock breaks Scissors, Player B wins"
-			else if playerA == "R" AND playerA == "P" then
-        OUTPUT "Paper beats Rock, Player B wins"
-			else if playerA == "P" AND playerB == "P" then
-        OUTPUT "Paper vs Paper is a tie"
+            else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("r")) {
+                System.out.println("Rock breaks Scissors, Player B wins");
+            }
+            else if (playerA.equalsIgnoreCase("r") && playerB.equalsIgnoreCase("p")) {
+                System.out.println("Paper beats Rock, Player B wins");
+            }
+            else if (playerA.equalsIgnoreCase("p") && playerB.equalsIgnoreCase("p")) {
+                System.out.println("Paper vs Paper is a tie");
+            }
 			else if playerA == "S" AND playerB == "P" then
         OUTPUT "Scissors cut Paper, player A wins"
 			else if playerA == "R" AND playerB == "S" then
