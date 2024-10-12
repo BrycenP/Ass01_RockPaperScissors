@@ -31,10 +31,11 @@ public class Main {
                 System.out.println("Scissors cut Paper, Player B wins");
             } else if (playerA.equalsIgnoreCase("s") && playerB.equalsIgnoreCase("s")) {
                 System.out.println("Scissors vs Scissors is a tie");
-            } else
-                System.out.println("Someone gave an ivalid answer please use 'R', 'P', or 'S'");
-            OUTPUT "Would you like to play again? [chose Y for yes and N for no]"
-            INPUT continue
+            } else {
+                System.out.println("Someone gave an invalid answer please use 'R', 'P', or 'S'");
+            }
+            System.out.print("Would you like to play again? [chose Y for yes and N for no]");
+            cont = in.next();
         } while (cont.equalsIgnoreCase("y"));
     }
 }
