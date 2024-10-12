@@ -1,15 +1,18 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        String playerA = ""
-        String playerB = ""
-        String continue = "Y"
+
+        Scanner in = new Scanner(System.in);
+        String playerA = "";
+        String playerB = "";
+        String cont = "Y";
 
         do
         {
-            System.out.println( "Player A, what is your move [please use R,P,or S]");
-        input playerA
-        OUTPUT "Player B, what is your move [please use R,P, or S]
-        input playerB
+            System.out.print( "Player A, what is your move [please use R,P,or S]");
+            playerA = in.next();
+            System.out.print( "Player B, what is your move [please use R,P,or S]");
+            playerB = in.next();
 
         if playerA == "R" AND playerB == "R" then
         OUTPUT "Rock vs Rock is a tie"
