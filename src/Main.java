@@ -3,13 +3,14 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        String playerA = "";
-        String playerB = "";
-        String cont = "Y";
-        boolean aValid = false;
-        boolean bValid = false;
-
+        String cont;
         do {
+
+            String playerA = "";
+            String playerB = "";
+            boolean aValid = false;
+            boolean bValid = false;
+
             do {
                 if (playerA.equalsIgnoreCase("r") || playerA.equalsIgnoreCase("p") || playerA.equalsIgnoreCase("s")) {
                     aValid = true;
